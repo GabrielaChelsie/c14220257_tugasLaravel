@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Event;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\events;
@@ -14,7 +15,7 @@ class EventSeeder extends Seeder
     public function run(): void
     {
         // Define the events data
-        events::create([
+        Event::create([
             'title' => 'Indonesia Innovation Challenge 2024 Powered by Launch Pad',
             'venue' => 'Jatim Expo',
             'date' => '2024-10-23',
@@ -22,11 +23,11 @@ class EventSeeder extends Seeder
             'description' => 'An innovative challenge event.',
             'booking_url' => null, // Add a URL if available
             'tags' => 'innovation,challenge',
-            'organizer_events_id' => 1, // Replace with the actual organizer ID
-            'category_events_id' => 1, // Replace with the actual category ID
+            'organizer_id' => 1, // Replace with the actual organizer ID
+            'event_category_id' => 1, // Replace with the actual category ID
             'active' => true
         ]); 
-        events::create([
+        Event::create([
             'title' => 'Kids Education Expo 2024',
             'venue' => 'The Westin',
             'date' => '2024-10-21',
@@ -34,11 +35,11 @@ class EventSeeder extends Seeder
             'description' => 'An educational expo for kids.',
             'booking_url' => null,
             'tags' => 'education,kids',
-            'organizer_events_id' => 2,
-            'category_events_id' => 1,
+            'organizer_id' => 2,
+            'event_category_id' => 1,
             'active' => true
         ]); 
-        events::create([
+        Event::create([
             'title' => 'Surabaya Great Expo 2024',
             'venue' => 'Grand City Surabaya',
             'date' => '2024-10-16',
@@ -46,11 +47,11 @@ class EventSeeder extends Seeder
             'description' => 'The greatest expo in Surabaya.',
             'booking_url' => null,
             'tags' => 'expo,surabaya',
-            'organizer_events_id' => 3,
-            'category_events_id' => 1,
+            'organizer_id' => 3,
+            'event_category_id' => 1,
             'active' => true
         ]); 
-        events::create([
+        Event::create([
             'title' => 'SMEX (Surabaya Music, Multimedia, and Lighting Expo 2024)',
             'venue' => 'Grand City Surabaya',
             'date' => '2024-09-29',
@@ -58,11 +59,11 @@ class EventSeeder extends Seeder
             'description' => 'A music and multimedia expo.',
             'booking_url' => null,
             'tags' => 'music,multimedia',
-            'organizer_events_id' => 4,
-            'category_events_id' => 1,
+            'organizer_id' => 4,
+            'event_category_id' => 1,
             'active' => true
         ]); 
-        events::create([
+        Event::create([
             'title' => 'Japan Edu Expo 2024',
             'venue' => 'Hotel Said',
             'date' => '2024-09-22',
@@ -70,11 +71,11 @@ class EventSeeder extends Seeder
             'description' => 'An educational expo focused on Japan.',
             'booking_url' => null,
             'tags' => 'education,japan',
-            'organizer_events_id' => 5,
-            'category_events_id' => 1,
+            'organizer_id' => 5,
+            'event_category_id' => 1,
             'active' => true,
         ]); 
-        events::create([
+        Event::create([
             'title' => 'Surabaya Hospital Expo 2024',
             'venue' => 'Grand City Surabaya',
             'date' => '2024-10-11',
@@ -82,8 +83,8 @@ class EventSeeder extends Seeder
             'description' => 'A health-focused expo.',
             'booking_url' => null,
             'tags' => 'health,expo',
-            'organizer_events_id' => 6,
-            'category_events_id' => 1,
+            'organizer_id' => 6,
+            'event_category_id' => 1,
             'active' => true
         ]); 
         

@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\organizers;
+use app\Models\Organizer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class OrganizersFactory extends Factory
 {
-    protected $model = organizers::class;
+    protected $model = Organizer::class;
 
     public function definition()
     {

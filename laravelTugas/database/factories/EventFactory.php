@@ -2,9 +2,9 @@
 
 namespace Database\Factories;
 
-use App\Models\event_categories;
-use App\Models\events;
-use App\Models\organizers;
+use app\Models\Event;
+use app\Models\EventCategory;
+use app\Models\Organizer;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class EventFactory extends Factory
 {
-    protected $model = events::class;
+    protected $model = Event::class;
     public function definition(): array
     {
         return [
@@ -22,8 +22,8 @@ class EventFactory extends Factory
             'date' => fake()->date(),
             'description' => fake()->text(20),
             'booking_url' => fake() ->url(),
-            'organizer_id' => organizers::factory(),
-            'event_category_id' => event_categories::factory(),
+            'organizer_id' => Organizer::factory(),
+            'event_category_id' => EventCategory::factory(),
             'tags' => fake()->words(3),
             'start_time' => fake()->dateTime(),
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),

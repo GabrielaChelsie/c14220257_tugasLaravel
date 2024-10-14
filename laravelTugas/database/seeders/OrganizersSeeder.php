@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\OrganizerEvent;
-use App\Models\organizers;
+use App\Models\Organizer;
+use App\Models\Organizers;
 use Illuminate\Support\Carbon;
 use Illuminate\Database\Seeder;
 
@@ -11,7 +11,7 @@ class OrganizersSeeder extends Seeder
 {
     public function run()
     {
-        organizers::create([
+        Organizer::create([
             'name' => 'Sparkling', 
             'description' => fake()->text(30),
             'facebook_link' => fake()->url(),
@@ -22,7 +22,7 @@ class OrganizersSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]); 
 
-        organizers::create([
+        Organizer::create([
             'name' => 'Five Star Organizer', 
             'description' => fake()->text(30),
             'facebook_link' => fake()->url(),
@@ -33,7 +33,7 @@ class OrganizersSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]); 
 
-        organizers::create([
+        Organizer::create([
             'name' => 'One Organizer', 
             'description' => fake()->text(30),
             'facebook_link' => fake()->url(),
@@ -44,7 +44,7 @@ class OrganizersSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]); 
 
-        organizers::create([
+        Organizer::create([
             'name' => 'Monday Organizer', 
             'description' => fake()->text(30),
             'facebook_link' => fake()->url(),
@@ -55,7 +55,7 @@ class OrganizersSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]); 
 
-        organizers::create([
+        Organizer::create([
             'name' => 'Scenery Organizer', 
             'description' => fake()->text(30),
             'facebook_link' => fake()->url(),
@@ -66,7 +66,7 @@ class OrganizersSeeder extends Seeder
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]); 
 
-        organizers::create([
+        Organizer::create([
             'name' => 'Amazing Organizer', 
             'description' => fake()->text(30),
             'facebook_link' => fake()->url(),

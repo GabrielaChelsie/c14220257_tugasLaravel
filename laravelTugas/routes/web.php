@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+// routes/web.php
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,7 @@ Route::get('/', function () {
 Route::get('/masterEvent', function () {
     return view('masterEvent');
 });
+
+
+Route::get('/', [EventController::class, 'index']);
+

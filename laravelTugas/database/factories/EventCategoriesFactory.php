@@ -2,7 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Models\event_categories;
+
+use app\Models\EventCategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -10,7 +11,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class EventCategoriesFactory extends Factory
 {
-    protected $model = event_categories::class;
+    protected $model = EventCategory::class;
 
     public function definition()
     {

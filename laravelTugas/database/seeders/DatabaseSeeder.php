@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
-use App\Models\event_categories;
-use App\Models\events;
-use App\Models\organizers;
+use App\Models\Event;
+use App\Models\EventCategory;
+use App\Models\Organizer;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,10 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(event_categories::class);
+        $this->call(EventCategory::class);
     
-        $this->call(organizers::class);
+        $this->call(Organizer::class);
         
-        $this->call(events::class);
+        $this->call(Event::class);
     }
 }
